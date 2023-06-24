@@ -1,7 +1,7 @@
 import SwiftUI
 
 struct ContentView: View {
-    @AppStorage("count") var count = 0
+    @AppStorage("count") var count = 10
     @AppStorage("remaining") var tryesReamaining = 40
     @AppStorage("messege") private var messege = ""
     
@@ -25,7 +25,7 @@ struct ContentView: View {
             .padding()
             .font(.system(size: 40))
             .background(.orange)
-            .foregroundColor(.black)
+            .foregroundColor(.blue)
             .cornerRadius(10)
             .shadow(color: .blue.opacity(0.9),radius: 10, x: 0.0, y:0.0)
             
